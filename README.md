@@ -2,11 +2,15 @@
 
 - [x] Part 1: Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
-- [x] Part 3: Migrate the application files and data from a databas
+- [x] Part 3: Migrate the application files and data from a database
 
 
 ## Tech Stack
-
+- Terraform
+- AWS S3
+- Google ﻿Cloud Platform
+- Docker
+- Kubernetes
 
 
 ## Part 1
@@ -28,3 +32,6 @@
 - Click on **Next** and click on **Create access key**
 - **Make sure to DOWNLOAD .csv file**
 - Once the download is complete, **rename the .csv file to key.csv**
+- [x] Prepare the environment to run Terraform
+- Access the Google Cloud Console ([console.cloud.google.com](http://console.cloud.google.com/)) **and log in with your newly created account**
+- Open the Cloud Shell
