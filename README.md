@@ -1,4 +1,4 @@
-# onpremise-migration-to-multicloud-and-devops
+# On-premise migration to Multicloud and DevOps Project
 
 - [x] Part 1: Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
