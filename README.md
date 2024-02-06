@@ -140,7 +140,7 @@ terraform destroy
 cd ~
 ​
 rm -rf mission*
-​```
+```
 - [ ] Clean the Cloud Shell in Google Cloud
 ```
 cd ~
