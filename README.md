@@ -6,7 +6,7 @@ Overall hours Spent for this project:
 - [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] [Part 2](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-2-convert-a-database-and-an-application-to-run-on-themulticloud-architectureawsandgoogle-cloud-includingdockerandkubernetes): Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
 - [x] Part 3: Migrate the application files and data from a database
-- [ ] Delete all the resources created
+- [x] Delete all the resources created. Destroying the environment permanently. 
 
 
 ## Tech Stack
@@ -275,3 +275,50 @@ rm -rf mission*
 ​
 rm -rf .ssh
 ```
+
+
+## Part 3: Migrate the application files and data from a database
+
+- [x] Connect to Google Cloud Shell
+- [x] Download the test dumps using wget
+```
+cd ~
+​
+wget https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/part3.zip
+​
+unzip part3.zip
+```
+- [x] Connect to MySQL DB running on Cloud SQL (once it prompts for the password, provide welcome123456). Don’t forget to replace the placeholder with your Cloud SQL Public IP
+```
+mysql --host=<replace_with_public_ip_cloudsql> --port=3306 -u app -p
+```
+- [x] Import the test dump on Cloud SQL
+```
+use dbcovidtesting;
+​
+source ~/part3/en/db/db_dump.sql
+```
+- [x] Check if the data got imported correctly
+```
+select * from records;
+​
+exit;
+```
+- [x] Connect to the AWS Cloud Shell
+- [x] Download the PDF files
+```
+wget https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/part3.zip
+
+unzip mission3.zip
+```
+- [x] Sync PDF Files with your AWS S3 used for COVID-19 Testing Status System. Replace the bucket name with yours.
+```
+cd mission3/en/pdf_files
+```
+
+```
+aws s3 sync . s3://**luxxy-covid-testing-system-pdf-en-xxxx**
+```
+- [x] Test the application. Upon migrating the data and files, you should be able to see the entries  under “View Guest Results” page. Successfully migrated an "on-premises" application & database to a MultiCloud Architecture!
+
+## Delete all the resources created. Destroying the environment permanently. 
