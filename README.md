@@ -129,7 +129,7 @@ Attention: The provisioning process can take between 15 to 25 minutes to finish.
 - [ ] Go to AWS Console Amazon S3
 
 
-## Part 1: Destroying the environment and starting over
+### Part 1: Destroying the environment and starting over
 
 In case you have encountered any problem/error and want to reset the environment to start over, follow the step-by-step instructions below to remove the entire MultiCloud environment:
 
