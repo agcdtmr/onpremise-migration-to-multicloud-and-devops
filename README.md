@@ -157,3 +157,24 @@ rm -rf .ssh
 
 
 ## Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
+
+- [x] Access AWS console and go to IAM service. Create "luxxy-covid-testing-system-en-app1" user using the IAM service
+Under Access management, Click in "Users", then "Add users". Insert the User name **luxxy-covid-testing-system-en-app1** and click in **Next** to create a programmatic user.
+- Set Permissions: AmazonS3FullAccess
+- Review all the details
+- Click on **Create user**
+- ### **create access key:**
+
+- Click on the user you have created.
+- Go to Security credentials tab.
+- Scroll down and go to Access keys section.
+- [x] Create access key
+
+![Screenshot 2023-02-03 at 09.48.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8264598b-1f83-4a51-8fbc-1a3f76f40210/Screenshot_2023-02-03_at_09.48.38.png)
+
+- Select **Command Line Interface (CLI)** and **I understand the above recommendation and want to proceed to create an access key** checkbox.
+- Click Next
+- Click on Create access key
+- Click on Download .csv file
+- After download, click Done.
+- Now, rename .csv file downloaded to **luxxy-covid-testing-system-en-app1.csv**
