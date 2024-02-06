@@ -5,7 +5,7 @@ This is the step by step documentation on how I migrate a real application of a 
 - [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] [Part 2](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-2-convert-a-database-and-an-application-to-run-on-themulticloud-architectureawsandgoogle-cloud-includingdockerandkubernetes): Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
 - [x] [Part 3](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-3-migrate-the-application-files-and-data-from-a-database): Migrate the application files and data from a database
-- [x] [Part 4](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#delete-all-the-resources-created-destroying-the-environment-permanently): Delete all the resources created. Destroying the environment permanently. 
+- [x] [Part 4](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/tree/main?tab=readme-ov-file#part-4-delete-all-the-resources-created-destroying-the-environment-permanently): Delete all the resources created. Destroying the environment permanently. 
 
 
 ## Extended Tech Stack
