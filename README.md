@@ -124,6 +124,11 @@ Attention: The provisioning process can take between 15 to 25 minutes to finish.
 - For production environments, it's recommended to use only the Private Network for database access.
 - Never provide public network access (0.0.0.0/0) to production databases. ⚠️
 
+- [ ] Go to GCP Cloud SQL
+- [ ] Go to GCP Kubernetes Engine
+- [ ] Go to AWS Console Amazon S3
+
+
 ## Part 1: Destroying the environment and starting over
 
 In case you have encountered any problem/error and want to reset the environment to start over, follow the step-by-step instructions below to remove the entire MultiCloud environment:
@@ -149,3 +154,6 @@ rm -rf mission*
 ​
 rm -rf .ssh
 ```
+
+
+## Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
