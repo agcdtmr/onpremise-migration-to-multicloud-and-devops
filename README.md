@@ -1,6 +1,6 @@
 # On-premise migration to Multicloud and DevOps Project
 
-This is the step by step documentation on how I migrate a real application of a luxury hotel chain to a Cloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform. Check the complete [Extended Tech Stack](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#extended-tech-stack)
+This is the step by step documentation on how to migrate an on-premise application to a multicloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform.  Check the complete [Extended Tech Stack](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#extended-tech-stack)
 
 **Solution Architecture**
 ![Solution Architecture](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/Screenshot%202024-02-06%20at%2014.14.27.png)
@@ -9,7 +9,7 @@ This is the step by step documentation on how I migrate a real application of a 
 - [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] [Part 2](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-2-convert-a-database-and-an-application-to-run-on-themulticloud-architectureawsandgoogle-cloud-includingdockerandkubernetes): Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
 - [x] [Part 3](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-3-migrate-the-application-files-and-data-from-a-database): Migrate the application files and data from a database
-- [x] [Part 4](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/tree/main?tab=readme-ov-file#part-4-delete-all-the-resources-created-destroying-the-environment-permanently): Delete all the resources created. Destroying the environment permanently. 
+- [x] [Part 4](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/tree/main?tab=readme-ov-file#part-4-delete-all-the-resources-created-destroying-the-environment-permanently): Delete all the resources created. Destroying the (testing) environment permanently. 
 
 
 ## Extended Tech Stack
@@ -363,7 +363,7 @@ aws s3 sync . s3://**luxxy-covid-testing-system-pdf-en-xxxx**
 ```
 - [x] Test the application. Upon migrating the data and files, you should be able to see the entries  under “View Guest Results” page. Successfully migrated an "on-premises" application & database to a MultiCloud Architecture!
 
-## Part 4: Delete all the resources created. Destroying the environment permanently.
+## Part 4: Delete all the resources created. Destroying the (testing) environment permanently. 
 
 After completing the this project and gathering the implementation evidence, follow the step-by-step instructions below to remove the entire MultiCloud environment.
 
