@@ -240,6 +240,9 @@ Sample of luxxy-covid-testing-system.yaml file:
     ```
     
 - [x] Under **GKE** > **Workloads** > **Exposing Services**, get the application Public IP. You should see the app up & running!
+
+![App Screenshot](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/Screenshot%202024-02-06%20at%2009.48.48.png)
+
 - [x] (Optional) Download [PDF](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/covid-testing.pdf) and add an entry in the application for testing in "Add Guest Results" button
 
 ### Part 2: # Destroying the environment and starting over
