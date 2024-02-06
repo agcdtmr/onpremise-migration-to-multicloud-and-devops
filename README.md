@@ -3,7 +3,7 @@
 
 Overall hours Spent for this project: 
 
-- [x] Part 1: Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
+- [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
 - [x] Part 3: Migrate the application files and data from a database
 
