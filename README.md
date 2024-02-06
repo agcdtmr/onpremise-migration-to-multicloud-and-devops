@@ -16,7 +16,7 @@ Overall hours Spent for this project:
 - Kubernetes
 
 
-## Part 1
+## Part 1: Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 
 - [x] Create a AWS Free Account
 - [x] Create a GCP Free Account
