@@ -240,3 +240,37 @@ Sample of luxxy-covid-testing-system.yaml file:
     
 - [x] Under **GKE** > **Workloads** > **Exposing Services**, get the application Public IP. You should see the app up & running!
 - [x] (Optional) Download [PDF](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/covid-testing.pdf) and add an entry in the application for testing in "Add Guest Results" button
+
+### Part 2: # Destroying the environment and starting over
+
+In case you have encountered any problem/error and want to reset the environment to start over, follow the step-by-step instructions below to remove the entire MultiCloud environment.
+
+- [ ] [Google Cloud] Delete Kubernetes resources. Go to GKE (Google Kubernetes Engine) **Clusters**. Find "luxxy-kubernetes-cluster-en" and click *Connect*. And Click "Run in Cloud Shell". And use the command below to delete Kubernetes resources
+```
+kubectl delete deployment luxxy-covid-testing-system
+
+kubectl delete service luxxy-covid-testing-system
+
+```
+- [ ] [Google Cloud] Delete VPC Peering
+- [ ] [AWS] Delete file inside of S3
+- [ ] [Google Cloud] Delete remaining resources w/ Terraform - Cloud Shell
+```
+cd ~/part1/en/terraform/
+
+terraform destroy
+```
+- [ ] Clean the Cloud Shell in AWS
+```
+cd ~
+​
+rm -rf mission*
+```
+- [ ] Clean the Cloud Shell in Google Cloud
+```
+cd ~
+​
+rm -rf mission*
+​
+rm -rf .ssh
+```
