@@ -56,7 +56,7 @@ unzip part1.zip
 mv key.csv part1/en
 
 ​
-cd mission1/en
+cd part1/en
 
 ​
 chmod +x *.sh
@@ -131,7 +131,7 @@ In case you have encountered any problem/error and want to reset the environment
 - [ ] [Google Cloud] Delete VPC Peering
 - [ ] [Google Cloud] Delete remaining resources w/ Terraform - Cloud Shell
 ```
-cd ~/mission1/en/terraform/
+cd ~/part1/en/terraform/
 ​
 terraform destroy
 ```
