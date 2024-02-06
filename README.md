@@ -1,7 +1,6 @@
 # On-premise migration to Multicloud and DevOps Project
 
-
-Overall hours Spent for this project: 
+This is the step by step documentation on how I migrate a real application of a luxury hotel chain to a Cloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform.
 
 - [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] [Part 2](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-2-convert-a-database-and-an-application-to-run-on-themulticloud-architectureawsandgoogle-cloud-includingdockerandkubernetes): Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
@@ -9,12 +8,46 @@ Overall hours Spent for this project:
 - [x] [Part 4](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#delete-all-the-resources-created-destroying-the-environment-permanently): Delete all the resources created. Destroying the environment permanently. 
 
 
-## Tech Stack
-- Terraform
-- AWS S3
-- Google ﻿Cloud Platform
-- Docker
-- Kubernetes
+## Extended Tech Stack
+
+### Infrastructure as Code (IaC):
+- **Terraform**: For provisioning and managing infrastructure on AWS and Google Cloud.
+
+### Cloud Platforms:
+- **AWS**: Cloud services for computing power, storage, and databases.
+- **Google Cloud Platform (GCP)**: Cloud services for building, deploying, and scaling applications.
+
+### Containerization and Orchestration:
+- **Docker**: Containerization for packaging applications and their dependencies.
+- **Kubernetes**: Container orchestration for automating deployment, scaling, and management of containerized applications.
+
+### Database:
+- **Cloud SQL (Google Cloud)**: Managed relational database service for MySQL.
+- **Amazon S3 (AWS)**: Object storage service for storing and retrieving data.
+
+### Continuous Integration/Continuous Deployment (CI/CD):
+- **Cloud Build (Google Cloud)**: CI/CD platform for automating build, test, and deployment processes.
+
+### Version Control:
+- **GitHub**: Hosting platform for version control and collaboration.
+
+### Security:
+- **IAM (Identity and Access Management)**: Access management for AWS and GCP resources.
+
+### Monitoring and Logging:
+- **Google Cloud Console and AWS Console**: Monitoring and managing cloud resources.
+- **CloudShell (Google Cloud)**: Web-based shell for managing resources and running scripts.
+
+### Networking:
+- **VPC Peering**: Networking feature for connecting VPCs in Google Cloud.
+
+### Additional Tools:
+- **AWS CLI and gcloud CLI**: Command-line interfaces for AWS and Google Cloud, respectively.
+- **Cloud Editor (Google Cloud)**: Web-based editor for editing files directly in Google Cloud.
+- **Cloud Storage (Google Cloud)**: Object storage service for storing files and objects.
+  
+### Documentation and Collaboration:
+- **GitHub README**: Documentation and project information.
 
 
 ## Part 1: Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
