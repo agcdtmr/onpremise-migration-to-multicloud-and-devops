@@ -239,4 +239,4 @@ Sample of luxxy-covid-testing-system.yaml file:
     ```
     
 - [x] Under **GKE** > **Workloads** > **Exposing Services**, get the application Public IP. You should see the app up & running!
-- [x] (Optional) Download a sample COVID testing and add an entry in the application. Download the PDF to use for testing in "Add Guest Results"
+- [x] (Optional) Download a sample COVID testing and add an entry in the application. Download the [PDF](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/covid-testing.pdf) to use for testing in "Add Guest Results"
