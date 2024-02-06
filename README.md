@@ -1,6 +1,6 @@
 # On-premise migration to Multicloud and DevOps Project
 
-This is the step by step documentation on how I migrate a real application of a luxury hotel chain to a Cloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform.
+This is the step by step documentation on how I migrate a real application of a luxury hotel chain to a Cloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform. Check the complete [Extended Tech Stack]()
 
 - [x] [Part 1](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-1-enable-amulticloud-architecturedeployment-throughterraform-with-resources-running-inawsandgoogle-cloud-platform): Enable a MultiCloud architecture deployment through Terraform, with resources running in AWS and Google ﻿Cloud Platform
 - [x] [Part 2](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#part-2-convert-a-database-and-an-application-to-run-on-themulticloud-architectureawsandgoogle-cloud-includingdockerandkubernetes): Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
