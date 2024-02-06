@@ -245,6 +245,8 @@ Sample of luxxy-covid-testing-system.yaml file:
 
 - [x] (Optional) Download [PDF](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/covid-testing.pdf) and add an entry in the application for testing in "Add Guest Results" button
 
+![test entry screenshot](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/Screenshot%202024-02-06%20at%2009.49.14.png)
+
 ### Part 2: # Destroying the environment and starting over
 
 In case you have encountered any problem/error and want to reset the environment to start over, follow the step-by-step instructions below to remove the entire MultiCloud environment.
