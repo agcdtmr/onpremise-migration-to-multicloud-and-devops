@@ -32,6 +32,7 @@
 - Click on **Next** and click on **Create access key**
 - **Make sure to DOWNLOAD .csv file**
 - Once the download is complete, **rename the .csv file to key.csv**
+- [x] On Google ﻿Cloud Platform. Create a [Google Cloud project](https://developers.google.com/workspace/guides/create-project). Name it multicloud-project
 - [x] Prepare the environment to run Terraform
 - Access the Google Cloud Console ([console.cloud.google.com](http://console.cloud.google.com/)) **and log in with your newly created account**
 - Open the Cloud Shell
