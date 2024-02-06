@@ -162,9 +162,7 @@ Attention: The provisioning process can take between 15 to 25 minutes to finish.
 - For production environments, it's recommended to use only the Private Network for database access.
 - Never provide public network access (0.0.0.0/0) to production databases. ⚠️
 
-- [ ] Go to GCP Cloud SQL
-- [ ] Go to GCP Kubernetes Engine
-- [ ] Go to AWS Console Amazon S3
+- [ ] Go to GCP Cloud SQL, GCP Kubernetes Engine, AWS Console Amazon S3 to see all the resources you've successfully created!
 
 
 ### Part 1: Destroying the environment and starting over
