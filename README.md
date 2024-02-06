@@ -159,22 +159,83 @@ rm -rf .ssh
 ## Part 2: Convert a database and an application to run on the MultiCloud architecture (AWS ﻿and ﻿Google Cloud), including Docker and Kubernetes
 
 - [x] Access AWS console and go to IAM service. Create "luxxy-covid-testing-system-en-app1" user using the IAM service
-Under Access management, Click in "Users", then "Add users". Insert the User name **luxxy-covid-testing-system-en-app1** and click in **Next** to create a programmatic user.
+- Under Access management, Click in "Users", then "Add users". Insert the User name **luxxy-covid-testing-system-en-app1** and click in **Next** to create a programmatic user.
 - Set Permissions: AmazonS3FullAccess
 - Review all the details
 - Click on **Create user**
-- ### **create access key:**
-
-- Click on the user you have created.
-- Go to Security credentials tab.
-- Scroll down and go to Access keys section.
 - [x] Create access key
-
-![Screenshot 2023-02-03 at 09.48.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8264598b-1f83-4a51-8fbc-1a3f76f40210/Screenshot_2023-02-03_at_09.48.38.png)
-
 - Select **Command Line Interface (CLI)** and **I understand the above recommendation and want to proceed to create an access key** checkbox.
 - Click Next
 - Click on Create access key
 - Click on Download .csv file
 - After download, click Done.
 - Now, rename .csv file downloaded to **luxxy-covid-testing-system-en-app1.csv**
+- [x] In Google Cloud Platform (GCP). Navigate to Cloud SQL instance and create a new user "app" with password welcome123456 on Cloud SQL MySQL database
+- [x] Connect to Google Cloud Shell
+- [x] **Download** the part2 files to Google Cloud Shell using the wget command as shown below
+```
+cd ~
+wget https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/part2.zip
+unzip part2.zip
+```
+- [x] Connect to MySQL DB running on Cloud SQL (once it prompts for the password, provide welcome123456). Don’t forget to replace the placeholder with your Cloud SQL Public IP
+```
+mysql --host=<replace_with_public_ip_cloudsql> --port=3306 -u app -p
+```
+- [x] Once you're connected to the database instance, create the products table for testing purposes
+```
+use dbcovidtesting;
+​
+source ~/part2/en/db/create_table.sql
+​
+show tables;
+​
+exit;
+```
+- [x] Enable Cloud Build API via Cloud Shell.
+```
+gcloud services enable cloudbuild.googleapis.com
+```
+- [x] Build the Docker image and push it to Google Container Registry.
+```
+GOOGLE_CLOUD_PROJECT_ID=$(gcloud config get-value project)
+```
+    
+```
+cd ~/part2/en/app
+```
+    
+```
+gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT_ID/luxxy-covid-testing-system-app-en
+```
+- [x] Open the Cloud Editor, go to part2 directory and edit the Kubernetes deployment file (luxxy-covid-testing-system.yaml) and update the variables below with your <PROJECT_ID> on the Google Container Registry path, AWS Bucket name, AWS Keys (open file luxxy-covid-testing-system-en-app1.csv and use Access key ID and Secret access key)  and Cloud SQL Database Private IP.
+```
+cd ~/part2/en/kubernetes
+```
+
+Sample of luxxy-covid-testing-system.yaml file:
+
+				image: gcr.io/<PROJECT_ID>/luxxy-covid-testing-system-app-en:latest
+...
+				- name: AWS_BUCKET
+          value: "luxxy-covid-testing-system-pdf-en-xxxx"
+        - name: S3_ACCESS_KEY
+          value: "xxxxxxxxxxxxxxxxxxxxx"
+        - name: S3_SECRET_ACCESS_KEY
+          value: "xxxxxxxxxxxxxxxxxxxx"
+        - name: DB_HOST_NAME
+          value: "172.21.0.3"
+
+- [x] Connect to the GKE (Google Kubernetes Engine) cluster via Console. Go to GKE (Google Kubernetes Engine) **Clusters**. Find "luxxy-kubernetes-cluster-en" and click *Connect*. And Click "Run in Cloud Shell"
+- [x] Deploy the application Luxxy in the Cluster
+    
+    ```
+    cd ~/part2/en/kubernetes
+    ```
+    
+    ```
+    kubectl apply -f luxxy-covid-testing-system.yaml
+    ```
+    
+- [x] Under **GKE** > **Workloads** > **Exposing Services**, get the application Public IP. You should see the app up & running!
+- [x] (Optional) Download a sample COVID testing and add an entry in the application. Download the PDF to use for testing in "Add Guest Results"
