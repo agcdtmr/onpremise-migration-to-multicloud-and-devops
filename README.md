@@ -40,5 +40,5 @@ Overall hours Spent for this project:
 - Access the Google Cloud Console ([console.cloud.google.com](http://console.cloud.google.com/)) **and log in with your newly created account**
 - Open the Cloud Shell
 - Download the part1.zip file in the Google Cloud shell using the wget command
-`wget https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/part1.zip`
+```wget https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/part1.zip```
 - Upload the key.csv file to the Cloud Shell using the browser
