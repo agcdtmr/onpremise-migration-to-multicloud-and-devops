@@ -326,7 +326,7 @@ aws s3 sync . s3://**luxxy-covid-testing-system-pdf-en-xxxx**
 ```
 - [x] Test the application. Upon migrating the data and files, you should be able to see the entries  under “View Guest Results” page. Successfully migrated an "on-premises" application & database to a MultiCloud Architecture!
 
-## Delete all the resources created. Destroying the environment permanently.
+## Part 4: Delete all the resources created. Destroying the environment permanently.
 
 After completing the this project and gathering the implementation evidence, follow the step-by-step instructions below to remove the entire MultiCloud environment.
 
