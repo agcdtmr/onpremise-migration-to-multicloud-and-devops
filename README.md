@@ -213,6 +213,7 @@ gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT_ID/luxxy-covid-testing-s
 cd ~/part2/en/kubernetes
 ```
 
+```
 Sample of luxxy-covid-testing-system.yaml file:
 
 				image: gcr.io/<PROJECT_ID>/luxxy-covid-testing-system-app-en:latest
@@ -225,7 +226,7 @@ Sample of luxxy-covid-testing-system.yaml file:
           value: "xxxxxxxxxxxxxxxxxxxx"
         - name: DB_HOST_NAME
           value: "172.21.0.3"
-
+```
 - [x] Connect to the GKE (Google Kubernetes Engine) cluster via Console. Go to GKE (Google Kubernetes Engine) **Clusters**. Find "luxxy-kubernetes-cluster-en" and click *Connect*. And Click "Run in Cloud Shell"
 - [x] Deploy the application Luxxy in the Cluster
     
