@@ -326,4 +326,37 @@ aws s3 sync . s3://**luxxy-covid-testing-system-pdf-en-xxxx**
 ```
 - [x] Test the application. Upon migrating the data and files, you should be able to see the entries  under “View Guest Results” page. Successfully migrated an "on-premises" application & database to a MultiCloud Architecture!
 
-## Delete all the resources created. Destroying the environment permanently. 
+## Delete all the resources created. Destroying the environment permanently.
+
+After completing the this project and gathering the implementation evidence, follow the step-by-step instructions below to remove the entire MultiCloud environment.
+
+- [ ] [Google Cloud] Delete Kubernetes resources. Go to GKE (Google Kubernetes Engine) **Clusters**. Find "luxxy-kubernetes-cluster-en" and click *Connect*. And Click "Run in Cloud Shell". And use the command below to delete Kubernetes resources
+```
+kubectl delete deployment luxxy-covid-testing-system
+
+kubectl delete service luxxy-covid-testing-system
+
+```
+
+- [ ] [Google Cloud] Delete VPC Peering
+- [ ] [AWS] Delete files inside of S3
+- [ ] [Google Cloud] Delete remaining resources w/ Terraform - Cloud Shell
+```
+cd ~/mission1/en/terraform/
+​
+terraform destroy
+```
+- [ ] Clean the Cloud Shell in AWS
+```
+cd ~
+​
+rm -rf mission*
+```
+- [ ] Clean the Cloud Shell in Google Cloud
+```
+cd ~
+​
+rm -rf mission*
+​
+rm -rf .ssh
+```
