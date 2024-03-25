@@ -3,6 +3,7 @@
 This is the step by step documentation on how to migrate an on-premise application to a multicloud environment. I use the most modern technologies in the market during the process such as: AWS, Google Cloud, Docker, Kubernetes and Terraform.  Check the complete [Extended Tech Stack](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/README.md#extended-tech-stack)
 
 - Learning in public [post](https://www.linkedin.com/posts/anjcalleja_unlocking-the-basics-a-beginners-project-activity-7160662363644289025-MTLh?utm_source=share&utm_medium=member_desktop).
+- [Blog](https://anj.hashnode.dev/unlocking-the-basics-a-beginners-project-of-on-premise-migration-to-multicloud-with-aws-google-cloud-and-devops-tools-docker-k8s-terraform)
 
 **Solution Architecture**
 ![Solution Architecture](https://github.com/agcdtmr/onpremise-migration-to-multicloud-and-devops/blob/main/Screenshot%202024-02-06%20at%2014.14.27.png)
